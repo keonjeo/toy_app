@@ -1,24 +1,32 @@
-# README
+# Ruby on Rails Tutorial
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## How to setup the development environment
 
-Things you may want to cover:
+  - install the rvm tool
 
-* Ruby version
+      `gpg --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3 7D2BAF1CF37B13E2069D6956105BD0E739499BDB`
+      `\curl -sSL https://get.rvm.io | bash -s stable --ruby`
+      `source $HOME/.rvm/scripts/rvm`
 
-* System dependencies
+  - install bundler
 
-* Configuration
+      `gem install bundler`
 
-* Database creation
 
-* Database initialization
+  - configure for bundle
 
-* How to run the test suite
+      `gem sources --add https://gems.ruby-china.org/ --remove https://rubygems.org/`
 
-* Services (job queues, cache servers, search engines, etc.)
+      `bundle config mirror.https://rubygems.org https://gems.ruby-china.org`
 
-* Deployment instructions
+  - install the gems related to this project
+      
+      `cd your_workspace/hello_app`
 
-* ...
+      `bundle install`
+
+
+
+## How to start the server on your local machine
+
+    ./start_server
